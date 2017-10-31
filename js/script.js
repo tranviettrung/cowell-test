@@ -3,7 +3,7 @@
  */
 
 $(document).ready(function() {
-    $('.carousel').carousel();
+    $('.carousel').carousel()
 
     var countdownClock = $('#clock');
 

@@ -1,5 +1,24 @@
-@media (min-width: 992px) and (max-width: 1199px) {
+@import "vendors/bootstrap/stylesheets/bootstrap";
+@import "vendors/reset";
 
+
+@media (min-width: 768px) {
+  .grid-article {
+    .col-md-3 {
+      flex: 0 0 20%;
+      max-width: 20%;
+    }
+    .col-md-9 {
+      flex: 0 0 80%;
+      max-width: 80%;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .container{
+    max-width: 1182px;
+  }
 }
 
 .img-responsive {
@@ -119,5 +138,32 @@ div.content {
       left: 0;
     }
 
+  }
+
+  div.news-list {
+
+    div.news {
+      position: relative;
+      .title {
+        position: absolute;
+        left:0;
+        top: 75%;
+        width: 75%;
+        a {
+          color: #000000;
+          background: #ffffff;
+          display: inline;
+        }
+      }
+    }
+
+    div.news:first-child {
+
+    }
+    div.news:not(:first-child) {
+      display: block;
+      width: 50%;
+      float: left;
+    }
   }
 }
